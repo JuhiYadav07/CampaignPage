@@ -7,9 +7,9 @@ const Navbar = () => {
         <h3>Dharmic Seva</h3>
 
         <div className='Nav-items'>
-          <a href='#'>Home</a>
-          <a href='#'>About Us </a>
-          <a href='#'>Explore Campaigns</a>
+          <a href='/'>Home</a>
+          <a href='/'>About Us </a>
+          <a href='/'>Explore Campaigns</a>
         </div>
 
         <button className ='btn'>Login</button>
