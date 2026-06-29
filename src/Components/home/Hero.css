@@ -1,0 +1,182 @@
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 60px 4rem;
+  background: #ffffff;
+  gap: 2rem;
+}
+
+.hero-left {
+  flex: 1;
+  max-width: 520px;
+}
+
+.hero-heading {
+  font-size: 36px;
+  font-weight: 800;
+  color: #1a1a1a;
+  line-height: 1.3;
+  margin-bottom: 16px;
+}
+
+.highlight {
+  color: #E65C00;
+}
+
+.hero-subtext {
+  font-size: 15px;
+  color: #666;
+  margin-bottom: 32px;
+  line-height: 1.6;
+}
+
+.hero-buttons {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.btn-donate-hero {
+  display: flex;
+  align-items: center;
+  background: #E65C00;
+  color: #fff;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 8px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.btn-donate-hero:hover {
+  background: #cc5000;
+}
+
+.btn-watch {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  color: #333;
+  font-size: 14px;
+}
+
+.watch-title {
+  display: block;
+  font-weight: 600;
+  font-size: 14px;
+  color: #1a1a1a;
+}
+
+.watch-sub {
+  display: block;
+  font-size: 11px;
+  color: #888;
+}
+
+.hero-right {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.hero-img {
+  width: 100%;
+  max-width: 480px;
+  height: 340px;
+  object-fit: cover;
+  border-radius: 16px;
+}
+
+.play-icon-wrapper {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: #ffffff;
+  border: 2px solid #E65C00;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Laptop */
+@media (max-width: 1024px) {
+  .hero {
+    padding: 40px 2rem;
+    gap: 1.5rem;
+  }
+
+  .hero-heading {
+    font-size: 28px;
+  }
+
+  .hero-img {
+    height: 280px;
+  }
+}
+
+/* Tablet - iPad Mini */
+@media (max-width: 769px) {
+  .hero {
+    flex-direction: column;
+    padding: 30px 1.5rem;
+    text-align: center;
+  }
+
+  .hero-heading {
+    font-size: 22px;
+  }
+
+  .hero-subtext {
+    font-size: 14px;
+  }
+
+  .hero-left {
+    max-width: 100%;
+  }
+
+  .hero-buttons {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .hero-right {
+    justify-content: center;
+    width: 100%;
+  }
+
+  .hero-img {
+    max-width: 100%;
+    height: 250px;
+    object-fit: cover;
+  }
+}
+
+/* Phone */
+@media (max-width: 480px) {
+  .hero {
+    padding: 20px 1rem;
+  }
+
+  .hero-heading {
+    font-size: 20px;
+  }
+
+  .hero-img {
+    height: 200px;
+  }
+
+  .btn-donate-hero {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .btn-watch {
+    width: 100%;
+    justify-content: center;
+  }
+}

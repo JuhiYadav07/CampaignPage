@@ -1,0 +1,228 @@
+.footer {
+  background-color: #FF6B00;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 40px;
+  padding: 60px;
+  color: white;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+.icondiv {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.Explore, .AboutUs, .Support {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.Dharmicseva {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  max-width: 320px;
+}
+
+.icondiv svg {
+  font-size: 36px;
+  color: white;
+}
+
+.dharmictext h1 {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1.2;
+  margin: 0;
+  color: white;
+}
+
+.dharmictext > p {
+  font-size: 14px;
+  line-height: 1.6;
+  color: white;
+  opacity: 0.9;
+  margin: 0;
+}
+
+.Social-icons {
+  display: flex !important;
+  flex-direction: row;
+  gap: 16px;
+  font-size: 20px;
+  margin-top: 5px;
+}
+
+.icon-circle {
+  width: 36px;
+  height: 36px;
+  background-color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #FF6B00;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.Explore a, .AboutUs a, .Support a {
+  color: white;
+  text-decoration: none;
+}
+
+.Newsletter {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  color: white;
+}
+
+.Newsletter h3 {
+  font-size: 18px;
+  font-weight: 700;
+  margin: 0;
+}
+
+.Newsletter p {
+  font-size: 14px;
+  opacity: 0.9;
+  margin: 0;
+}
+
+.newsletter-input {
+  display: flex;
+  background-color: white;
+  border-radius: 6px;
+  overflow: hidden;
+  padding: 4px;
+  gap: 4px;
+  box-sizing: border-box;
+}
+
+.newsletter-input input {
+  padding: 10px 14px;
+  border: none;
+  border-radius: 6px 0 0 6px;
+  font-size: 14px;
+  outline: none;
+  flex: 1;
+  min-width: 0;
+}
+
+.newsletter-input button {
+  padding: 10px 16px;
+  background-color: #FF6B00;
+  color: white;
+  border: none;
+  border-radius: 100px;
+  font-weight: 600;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #FF6B00;
+  padding: 16px 60px;
+  color: white;
+  font-size: 14px;
+  border-top: 1px solid rgba(255, 255, 255, 0.3);
+  box-sizing: border-box;
+}
+
+.footer-badges {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+/* TABLET */
+@media (max-width: 768px) {
+  .footer {
+    flex-wrap: wrap;
+    padding: 40px;
+    gap: 32px;
+  }
+
+  .Dharmicseva {
+    max-width: 100%;
+    width: 100%;
+  }
+
+  .dharmictext h1 {
+    font-size: 28px;
+  }
+
+  .dharmictext > p {
+    font-size: 16px;
+  }
+
+  .Explore h3, .AboutUs h3, .Support h3, .Newsletter h3 {
+    font-size: 20px;
+  }
+
+  .Explore a, .AboutUs a, .Support a {
+    font-size: 16px;
+  }
+
+  .Newsletter p {
+    font-size: 16px;
+  }
+
+  .newsletter-input input {
+    font-size: 16px;
+  }
+
+  .newsletter-input button {
+    font-size: 16px;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    gap: 8px;
+    text-align: center;
+    padding: 16px 40px;
+    font-size: 16px;
+  }
+}
+
+/* PHONE */
+@media (max-width: 480px) {
+  .footer {
+    flex-direction: column;
+    padding: 32px 16px;
+    gap: 24px;
+  }
+
+  .Dharmicseva {
+    max-width: 100%;
+    width: 100%;
+  }
+
+  .Explore, .AboutUs, .Support, .Newsletter {
+    width: 100%;
+  }
+
+  .newsletter-input {
+    width: 100%;
+  }
+
+  .footer-bottom {
+    padding: 16px;
+    font-size: 12px;
+  }
+
+  .footer-badges {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 8px;
+  }
+}

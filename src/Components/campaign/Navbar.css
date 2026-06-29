@@ -6,11 +6,13 @@ body {
 
 .Navbar-container {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   padding: 1rem;
   background-color:#ffffff;;
   height: 40px;
+   box-sizing: border-box;
+  width: 100%;
 }
 
 .Nav-items {
@@ -38,4 +40,29 @@ body {
 
 .display img{
 
+}
+
+
+@media (max-width: 768px) {
+  .Navbar-container {
+    justify-content: space-between;
+    padding: 0.5rem 1rem;
+    box-sizing: border-box;
+    width: 100%;
+  }
+
+  .Nav-items {
+    display: none;
+  }
+
+  .btn {
+    padding: 6px 12px;
+    font-size: 12px;
+    white-space: nowrap;
+  }
+
+  h3 {
+    margin: 0;
+    font-size: 1rem;
+  }
 }

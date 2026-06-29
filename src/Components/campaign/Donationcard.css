@@ -144,3 +144,42 @@
 }
 
 
+
+/* @media (max-width: 768px) {
+  .Donation {
+    width: 100%;
+    border: 1px solid #e5e7eb;
+    border-radius: 12px;
+    padding: 20px;
+    background-color: #ffffff;
+    box-sizing: border-box;
+  }
+
+  .prices {
+    gap: 6px;
+  }
+
+  .prices p {
+    padding: 8px 12px;
+    font-size: 12px !important;
+  }
+
+  .donate-btn {
+    width: 100%;
+    margin-top: 3px;
+    border:2px
+  }
+
+  .bottom {
+    padding: 5px;
+    gap: 4px;
+  }
+
+  .Shield, .receipt, .people, .heart {
+    width: auto;
+    flex: 1;
+    padding: 6px 2px;
+    min-height: 70px;
+    font-size: 10px;
+  }
+} */

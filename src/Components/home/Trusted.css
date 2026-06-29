@@ -1,0 +1,217 @@
+body {
+  overflow-x: hidden;
+}
+
+.Trusted {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 60px 40px; 
+  overflow: hidden;
+  background-color: #8B4513;
+  gap: 40px;
+}
+
+.trusted-left {
+  width: 48%;
+  color: white;
+  text-align: left;
+}
+
+.trusted-right {
+  display: flex;
+  flex-direction: column;
+  width: 48%;
+  gap: 20px;
+}
+
+.row1, .row2 {
+  display: flex;
+  gap: 16px;
+}
+
+.box1, .box2, .box3, .box4 {
+  background: rgba(255, 255, 255, 0.15);
+  display: flex;
+  border-radius: 12px;
+  flex-direction: row;
+  align-items: center;
+  gap: 12px;
+  padding: 16px;
+  color: white;
+  width: 50%;
+}
+
+.box-text {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+.box-text p {
+  margin: 0;
+}
+
+.box-text p:first-child {
+  font-weight: bold;
+  font-size: 20px;
+  margin: 0;
+}
+
+.box-text p:last-child {
+  font-size: 12px;
+  line-height: 1.3;
+  color: rgba(255, 255, 255, 0.85);
+}
+
+.box-icon {
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 50%;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 40px;
+  height: 40px;
+  flex-shrink: 0; 
+}
+
+.donor-ticker {
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 20px;
+  padding: 8px 16px;
+  color: white;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 10px 0 0 0;
+  font-size: 13px;
+  width: fit-content;
+  align-self: flex-start; 
+}
+
+.Trust-Btn {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-top: 24px;
+}
+
+.Trust-Btn button:first-child {
+  background: #FF6B00;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 24px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.play-icon {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: white;
+  cursor: pointer;
+}
+
+.play-icon button {
+  background: transparent;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+  padding: 0;
+}
+
+.Icon-Text {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 12px;
+}
+
+.Icon-Text p {
+  margin: 0;
+  color: white;
+  font-size: 14px;
+}
+
+.trusted-left h2 {
+  font-size: 36px;
+  font-weight: bold;
+  color: white;
+  margin: 0 0 16px 0;
+  line-height: 1.2;
+}
+
+.trusted-left > p {
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 16px;
+  margin: 0 0 24px 0;
+  line-height: 1.5;
+}
+
+/* Tablet - iPad etc */
+@media (max-width: 768px) {
+  .Trusted {
+    padding: 40px 24px;
+    gap: 32px;
+  }
+  .trusted-left h2 {
+    font-size: 28px;
+  }
+}
+
+
+@media (max-width: 540px) {
+  .Trusted {
+    flex-direction: column; 
+    padding: 32px 16px;     
+    gap: 28px;
+  }
+
+  .trusted-left, .trusted-right {
+    width: 100%; 
+  }
+
+  .trusted-left h2 {
+    font-size: 24px; 
+  }
+
+  .trusted-left > p {
+    font-size: 14px;
+  }
+
+  .Trust-Btn {
+    flex-direction: column; 
+    align-items: flex-start;
+    gap: 16px;
+  }
+
+  .Trust-Btn button:first-child {
+    width: 100%; 
+    text-align: center;
+  }
+
+  .row1, .row2 {
+    flex-direction: column; 
+    gap: 12px;
+  }
+
+  .box1, .box2, .box3, .box4 {
+    width: 100%; 
+    padding: 14px;
+  }
+
+  .box-text p:first-child {
+    font-size: 18px;
+  }
+
+  .donor-ticker {
+    width: 100%;
+    white-space: normal; 
+    font-size: 12px;
+  }
+}

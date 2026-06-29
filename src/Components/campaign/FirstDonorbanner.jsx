@@ -1,7 +1,7 @@
 import React from 'react';
 import { FaHeart, FaRegHeart } from "react-icons/fa";
 import { FaShareAlt } from "react-icons/fa";
-import './Firstdonorbanner.css';
+import './FirstDonorbanner.css';
 
 const Firstdonorbanner = () =>{
 

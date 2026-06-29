@@ -80,3 +80,30 @@
   margin-top: 10px;
   width: 100%;  
 }
+
+
+@media (max-width: 768px) {
+  .campaign-container {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0 1rem;
+  }
+
+  h1 {
+    font-size: 1.4rem;
+    margin: 0.5rem 0;
+  }
+
+  .display-img {
+    height: 250px;
+  }
+
+  .thumbnail-img {
+    width: 60px;
+    height: 70px;
+  }
+
+  .carousel-thumbnails {
+    gap: 6px;
+  }
+}
